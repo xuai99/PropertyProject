@@ -1,0 +1,230 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">MyProperty</string>
+
+    <string name="addPropertyTitle">Property Information</string>
+    <string name="overviewTitle">Information Overview</string>
+    <string name="worksheetTitle">Infomation</string>
+    <string name="notesTitle">Housing Notes</string>
+    <string name="picturesTitle">Images</string>
+    <string name="summaryTitle">Housing Summary(yearly)</string>
+    <string name="projectionsTitle">Investment Projection</string>
+
+    <string name="add">Add</string>
+    <string name="about">About</string>
+    <string name="delete">Delete</string>
+    <string name="done">Done</string>
+    <string name="share">Share</string>
+    <string name="showIntro">Intro</string>
+
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="addNewPhotoTitle">Add Photo</string>
+    <string name="importExistingPhoto">Import Photo</string>
+    <string name="captureNewPhoto">Capture Photo</string>
+    <string name="selectPhotoTitle">Select Photo</string>
+    <string name="pictureCaptureError">Unable to capture or import photo</string>
+    <string name="savingPicture">Saving myPicture</string>
+    <string name="noCameraPermissionError">Unable to capture myPicture without the camera permission</string>
+    <string name="deletePictureTitle">Remove Picture</string>
+    <string name="deletePictureConfirmation">Please confirm that you want to delete this myPicture.</string>
+
+
+    <string name="name">Name</string>
+    <string name="value">Value</string>
+
+
+    <string name="noProperties">Properties Not found, Click Floating button to add property.</string>
+
+    <string name="blank" translatable="false" />
+    <string name="commercial">Commercial lot</string>
+    <string name="condo">Condominium</string>
+    <string name="house">Apartment</string>
+    <string name="land">Landed-housing</string>
+    <string name="multifamily">Multi-Family housing</string>
+    <string name="manufactured">Manufactured housing</string>
+    <string name="other">Others</string>
+    <string name="carport">Carport</string>
+    <string name="garage">Garage</string>
+    <string name="offstreet">Off-Street parking</string>
+    <string name="onstreet">On-Street parking</string>
+    <string name="none">None</string>
+    <string name="privatelot">Private Lot parking</string>
+
+    <string name="deletePropertyTitle">Remove Property</string>
+    <string name="deletePropertyConfirmation">Please confirm that you want to delete this Property unit.</string>
+
+    <string name="purchasePriceField">Property Purchase Price:</string>
+    <string name="afterRepairsValueField">After Repairs Value:</string>
+    <string name="afterRepairsValueHelp">The value is similar to purchased priced,If repairs/remodeling are not required.</string>
+    <string name="financingTitle">Mortgage Loans</string>
+    <string name="useALoanField">Using a loan?:</string>
+    <string name="downPaymentField">Property Down Payment:</string>
+    <string name="percentSymbol" translatable="false">%</string>
+    <string name="interestRateField">Interest Rate:</string>
+    <string name="loanDurationField">Loan Duration:</string>
+    <string name="yearsUnit">Years</string>
+    <string name="purchaseCostsTitle">Purchase Costs</string>
+    <string name="purchaseCostsField">Purchase Costs:</string>
+    <string name="totalField">Total:</string>
+    <string name="itemize">Itemize</string>
+    <string name="percentOfPriceUnit">% of Price</string>
+    <string name="repairRemodelCostsTitle">Remodel and repair cost</string>
+    <string name="repairRemodelCostsField">Repair/Remodel Costs:</string>
+    <string name="incomeTitle">Net Property Income</string>
+    <string name="grossRentField">Gross Rent:</string>
+    <string name="perMonthUnit">Monthly Value</string>
+    <string name="otherIncomeField">Additional Income:</string>
+    <string name="expensesTitle">Net Property Expenses</string>
+    <string name="percentOfRentUnit">% of Rent</string>
+    <string name="assumptionsTitle">Tax and Increment Assumptions</string>
+    <string name="vacancyField">Vacancy:</string>
+    <string name="appreciationField">Appreciation:</string>
+    <string name="percentPerYearUnit">% Per Year</string>
+    <string name="incomeIncreaseField">Income Increment:</string>
+    <string name="expensesIncreaseField">Inflation rate:</string>
+    <string name="incomeTaxRateField">Income Tax Rate:</string>
+    <string name="incomeTaxRateValueHelp">Enter Federal tax rate for after tax cash flow calculations.</string>
+    <string name="sellingCostsField">Selling Costs:</string>
+    <string name="percentOfSalePriceUnit">% of Sale Price</string>
+    <string name="landValueField">Land Value:</string>
+    <string name="nickname">Property Name</string>
+    <string name="addressTitle">Housing Address</string>
+    <string name="street">Street Name</string>
+    <string name="city">City</string>
+    <string name="stateOrRegion">State/Region</string>
+    <string name="zip">Zip code (ie: 11900)</string>
+    <string name="detailsTitle">DETAILS</string>
+    <string name="propertyTypeField">Type of Property:</string>
+    <string name="bedsField">Beds:</string>
+    <string name="bathsField">Baths:</string>
+    <string name="squareFootageField">house Square Feet(ft):</string>
+    <string name="squareFeet">Property Square Feet</string>
+    <string name="lotSizeField">Lot Size:</string>
+    <string name="lotSize">Lot Size \n (leave blank for house without lot area)</string>
+    <string name="yearBuiltField">Property Built Year:</string>
+    <string name="yearBuilt">Year</string>
+    <string name="parkingField">Parking lot type:</string>
+    <string name="zoningField">Type of Zoning:</string>
+    <string name="zoning">Zoning \n(Leave blank if not understood)</string>
+    <string name="mlsNumberField">MLS Number:</string>
+    <string name="mlsNumber">MLS Number \n(Leave blank if not understood)</string>
+    <string name="worksheet">Property Financial Details</string>
+    <string name="pictures">Pictures</string>
+    <string name="notes">Additional Notes</string>
+    <string name="analysisTitle">ANALYSIS</string>
+    <string name="summary">Summary Report Analysis</string>
+    <string name="projections">Projections</string>
+    <string name="purchaseRepairRemodelTitle">Purchase Information</string>
+    <string name="financedField">Financed:</string>
+    <string name="totalCashNeededField">Total Cash Needed:</string>
+    <string name="valuationTitle">Property Valuation</string>
+    <string name="pricePerSquareFootField">Price Per Square Foot:</string>
+    <string name="operationFirstYearTitle">OPERATION (FIRST YEAR)</string>
+    <string name="operationTitle">OPERATION</string>
+    <string name="operatingIncomeField">Operating Income:</string>
+    <string name="operatingExpensesField">Operating Expenses:</string>
+    <string name="netOperatingIncomeField">Net Operating Income:</string>
+    <string name="mortgageField">Mortgage (Yearly):</string>
+    <string name="cashFlowField">Cash Flow:</string>
+    <string name="afterTaxCashFlowField">Cash Flow After Tax:</string>
+    <string name="returnsTitle">Potential Returns</string>
+    <string name="capitalizationRateField">Capitalization Rate:</string>
+    <string name="cashOnCashField">Cash On Cash:</string>
+    <string name="rentToValueField">Rental Yield:</string>
+    <string name="grossRentMultiplierField">Gross Rent Multiplier(GRM):</string>
+    <string name="equityTitle">Property Equity</string>
+    <string name="propertyValueField">Property Value</string>
+    <string name="loanBalanceField">Loan Balance</string>
+    <string name="totalEquityField">Total Property Equity</string>
+    <string name="mortgageInterestField">Total Interest Payment</string>
+    <string name="projectionText">Analyze Year: <xliff:g id="number">%d</xliff:g></string>
+
+    <!-- Dictionary lookups -->
+    <string name="purchasePriceHelpTitle">Purchase Price</string>
+    <string name="purchasePriceDefinition">The price of the Property.\n\n Does not include the purchase costs or costs to repair.</string>
+    <string name="afterRepairsValueHelpTitle">After Value of Repair</string>
+    <string name="afterRepairsValueDefinition">The estimated market value of the Property after repairs and updates.</string>
+    <string name="purchaseCostsHelpTitle">Purchase Costs</string>
+    <string name="purchaseCostsDefinition">The costs and fees associated with purchasing the property.\n\n Examples of purchasing costs include: appraisal, Sales and purchase argreement, loan agreement fees, and other processing fees for first year.</string>
+    <string name="repairRemodelHelpTitle">Repair and Remodel Costs</string>
+    <string name="repairRemodelDefinition">The costs for repairing and Remodel Property purchased.\n\nExamples include paint, flooring and cleaning.</string>
+    <string name="grossRentHelpTitle">Gross Rent (Yearly)</string>
+    <string name="grossRentDefinition">The total values of all rents collected from tenants. Does not consider vacancy or expenses.</string>
+    <string name="otherIncomeHelpTitle">Additional Income </string>
+    <string name="otherIncomeDefinition">Any additional income besides than that from rents.\n\nThis may include other services provided to tenants, such as yard maintenance, house cleaning, utilities, and coin-operated laundry and vending machine proceeds.</string>
+    <string name="operatingExpensesHelpTitle">Operating Expenses</string>
+    <string name="operatingExpensesDefinition">All the expenses paid while renting a property.\n\nExamples include insurance, 3rd party warranties, maintenance, property taxes, and utilities.</string>
+    <string name="vacancyHelpTitle">Vacancy</string>
+    <string name="vacancyDefinition">The percentage of time the property is expected  not being rented.\n\nIdeally the property will and must always be rented. However, the property sometimes may be vacant between tenants or during repairing/ remodeling .\n\nExample: if the property is expected to  be vacant one month out of the year, this is 1/12=8.3% (for using days formula = 30/365)</string>
+    <string name="vacancyFormula">$$\\text{Vacancy} = \\frac{\\text{time not rented}}{\\text{total time}}$$</string>
+    <string name="appreciationHelpTitle">Appreciation</string>
+    <string name="appreciationDefinition">The yearly increase of the Property\'s value.\n\nThis can be due to a number of reasons, which include increased demand or reduced supply, or inflation.</string>
+    <string name="incomeIncreaseHelpTitle">Income Increase</string>
+    <string name="incomeIncreaseDefinition">The yearly increase of the income generated by the property.\n\nInflation is the typical cause of the increase. This affects both the rent and other income from the property.</string>
+    <string name="expensesIncreaseHelpTitle">Expenses Increase</string>
+    <string name="expensesIncreaseDefinition">The yearly increase of the expenses paid while renting the prperty.\n\nInflation is the typical cause of the increase, and affects all expenses.</string>
+    <string name="sellingCostsHelpTitle">Selling Costs</string>
+    <string name="sellingCostsDefinition">The costs and fees associated with selling the Property. This is also called closing costs.\n\nExamples include real estate agent commissions, taxes, home warranty, and escrow fees.</string>
+    <string name="landValueHelpTitle">Land Value</string>
+    <string name="landValueDefinition">The value of the land alone, i.e. the value of the Property less the value of the dwelling and other structures.\n\nThis is used in calculating the depreciation deduction of the Property.</string>
+    <string name="totalCashNeededTitle">Total Cash Needed</string>
+    <string name="totalCashNeededDefinition">The total amount of cash needed to purchase the property, repair, and update it.</string>
+    <string name="totalCashNeededFormula">$$\\text{Total Cash Needed} = \\text{Down Payment} + \\text{Purchase Costs} + \\text{Repair and Update Costs}$$</string>
+    <string name="operatingIncomeHelpTitle">Operating Income</string>
+    <string name="operatingIncomeDefinition">All the income generated by renting Property plus Other income minus vacancies.</string>
+    <string name="operatingIncomeFormula">$$\\text{Value} = \\text{Gross Rent} + \\text{Other Income} - \\text{Vacancies}$$</string>
+    <string name="netOperatingIncomeHelpTitle">Net Operating Income</string>
+    <string name="netOperatingIncomeDefinition">All the income generated by renting a property, minus Operating Expenses.\n\nThis does not take into account loan payments. Because of this, Net Operating Income can be used to compare properties independent of financing.</string>
+    <string name="netOperatingIncomeFormula">$$\\text{NOI} = \\text{Operating Income} - \\text{Operating Expenses}$$</string>
+    <string name="cashFlowHelpTitle">Cash Flow</string>
+    <string name="cashFlowDefinition">The amount of money received from a rental property as income.\n\nThis accounts for all income sources and all expenses, including loan payments.</string>
+    <string name="cashFlowFormula">\\text{Cash Flow} = \\text{Net Operating Income} - \\text{Loan Payment}$$</string>
+    <string name="capitalizationRateHelpTitle">Capitalization Rate</string>
+    <string name="capitalizationRateDefinition">A rate of return on a rental property that compares the yearly Net Operating Income and the Purchase Price.\n\nThis does not take into account loan payments. Because of this, the Capitalization Rate can be used to compare properties independent of financing.</string>
+    <string name="capitalizationRateFormula">$$\\text{Capitalization Rate} = \\frac{\\text{Yearly Net Operating Income}}{\\text{Purchase Price}}$$</string>
+    <string name="cashOnCashHelpTitle">Cash On Cash</string>
+    <string name="cashOnCashDefinition">A rate of return on a rental property that compares the yearly Cash Flow and Total Invested Cash.\n\nThis represents the yearly return on the invested cash.</string>
+    <string name="cashOnCashFormula">$$\\text{Cash On Cash} = \\frac{\\text{Yearly Cash Flow}}{\\text{Total Invested Cash}}$$</string>
+    <string name="rentToValueHelpTitle">Rent To Value</string>
+    <string name="rentToValueDefinition">A rate of return on a rental a Property that compares the  yearly Gross Rent and the Property\'s Market Value.</string>
+    <string name="rentToValueFormula">$$\\text{Rent To Value} = \\frac{\\text{Yearly Gross Rent}}{\\text{Market Value}}$$</string>
+    <string name="grossRentMultiplierHelpTitle">Gross Rent Multipliers</string>
+    <string name="grossRentMultiplierDefinition">A rate of return on a rental Property that compares the Purchase Price and the yearly Gross Rent.\n\nIt represents the number of years it will take for the yearly Gross Rent to add to the purchase price.</string>
+    <string name="grossRentMultiplierFormula">$$\\text{Gross Rent Multiplier} = \\frac{\\text{Purchase Price}}{\\text{Yearly Gross Rent}}$$</string>
+    <string name="propertyValueHelpHelpTitle">Property Value</string>
+    <string name="propertyValueHelpDefinition">The current value of the property.\n\nThis may not be the same as the purchase price, as the property may have been purchased at a discount, repairs or updated may have been made, the property has appreciated over time, etc.</string>
+    <string name="totalEquityHelpTitle">Total Equity</string>
+    <string name="totalEquityHelpDefinition">The portion of the property\'s market value that you own. If using a loan, this depends on the balance of the loan. Equity will increase as the loan is paid down and the property\'s value appreciates.</string>
+    <string name="totalEquityHelpFormula">$$\\text{Equity} = \\text{Market Price} - \\text{Loan Balance}$$</string>
+    <string name="depreciationHelpTitle">Depreciation</string>
+    <string name="depreciationHelpDefinition">Instead of deducting the cost of purchasing a Property all in one year, many country\'s require that the cost of a rental be taken over the property\'s useful lifespan.\n\nIn the US, the useful lifespan of a property is considered 27.5 years. If ot in the US, check the local tax laws on rental property depreciation rules.</string>
+    <string name="mortgageInterestHelpTitle">Mortgage Interest</string>
+    <string name="mortgageInterestHelpDefinition">The portion of the mortgage payment which is the interest portion of the loan.\n\nIn some countries one can deduct the mortgage interest from one\'s taxes. Check local tax laws for more information.</string>
+
+    <string name="purchaseCostsItemizeTitle">Itemize Purchase Costs</string>
+    <string name="purchaseCostsItemizeHelp">Add any purchase costs or closing costs, which may include  legal fees, property inspection fees,Bank processing fee, and Loan Facility Agreement\’s. Note: the names must be unique.</string>
+    <string name="repairCostsItemizeTitle">Itemize Repair Costs</string>
+    <string name="repairCostsItemizeHelp">Add any repair costs, which may include paint, flooring, appliances, cleaning, and updates. Note: naming must be unique.</string>
+    <string name="expensesItemizeTitle">Itemize Expenses</string>
+    <string name="expensesItemizeHelp">Add any expenses per month, which may include housing tax, insurance, 3rd party warranties, and etc. Note: naming must be unique.</string>
+
+    <string name="intro1Title">Welcome to MyRental\n</string>
+    <string name="intro1Description">Analyze rental properties to determine the best investment!\n\n</string>
+    <string name="intro2Title">Adding Properties\n</string>
+    <string name="intro2Description">Add a new property by touching the plus from the property list.\n\nEnter a nickname, address, and any other information you want.</string>
+    <string name="intro3Title">Housing information\n</string>
+    <string name="intro3Description">Touch Worksheet to enter details, including purchase price, financing, repair/remodel costs, monthly rent, and other information.</string>
+    <string name="intro4Title">Summary / Projections\n</string>
+    <string name="intro4Description">After filling out the worksheet, touch Summary to see details on the deal, including cash needed, first year\'s operation, and returns. \n\nTouch Projections to see future operations and returns.</string>
+    <string name="intro5Title">Other Information\n</string>
+    <string name="intro5Description">Images of the property can be captured on the Pictures page, and notes can be recorded on the Notes page.</string>
+    <string name="intro6Title">Feedback\n</string>
+    <string name="intro6Description">Please leave feedback! </string>
+
+    <string name="map_key" translatable="false">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+
+</resources>

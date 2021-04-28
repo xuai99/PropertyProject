@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="protect.myRentalInfo.google_map">
+
+    <TextView
+        android:id="@+id/backTohomepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_back"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:drawablePadding="30sp"
+        android:text="Back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/addressInfo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="my address information"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/copyData"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_copy"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+    <SearchView
+        android:id="@+id/sv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search housing Location" />
+    <fragment
+        android:id="@+id/google_maps"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="400dp"/>
+    <Button
+        android:background="@drawable/circle"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="Get location \n lat/Lng"
+        android:layout_marginTop="10dp"
+        android:id="@+id/shareLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

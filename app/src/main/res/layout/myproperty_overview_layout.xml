@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:background="@color/inputContrastBackground"
+                                                 android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+</android.support.design.widget.AppBarLayout>
+
+    <ScrollView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/inputContrastBackground"
+                app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout
+            android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:stretchColumns="1"
+                         android:background="@color/inputContrastBackground">
+                <!-- Housing information  -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:drawableLeft="@drawable/ic_property"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textColor="#000"
+                        android:layout_marginBottom="10dp"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:text="Housing information"
+                        android:textSize="@dimen/overviewTitleSize" />
+                </TableRow>
+
+                <!-- Summary -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+
+                <TableRow
+                    android:id="@+id/propertyView"
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="false">
+
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/propertyOverviewEntryPadding">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:textSize="@dimen/overviewValueSize"
+                                android:id="@+id/nickname"
+                                android:textColor="#000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:baselineAligned="true">
+
+                                <TextView
+                                    android:textSize="@dimen/propertySummaryDetailSize"
+                                    android:id="@+id/street"
+                                    android:textColor="#000"
+                                    android:layout_height="match_parent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_weight="2"/>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:textSize="@dimen/propertySummaryDetailSize"
+                                android:id="@+id/stateZip"
+                                android:textColor="#000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+                            <TextView
+                                android:textSize="@dimen/propertySummaryDetailSize"
+                                android:id="@+id/purchasePrice"
+                                android:hint="hello"
+                                android:textColor="#000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+                            <TextView
+                                android:textSize="@dimen/propertySummaryDetailSize"
+                                android:id="@+id/buildYear"
+                                android:hint="Year"
+                                android:textColor="#000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+                            <TextView
+                                android:textSize="@dimen/propertySummaryDetailSize"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="----Housing Overview----"
+                                android:textColor="#000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+                            <TextView
+                                android:textSize="@dimen/propertySummaryDetailSize"
+                                android:id="@+id/HousingGrossRent"
+                                android:hint="hello"
+                                android:textColor="#000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+                            <TextView
+                                android:textSize="@dimen/propertySummaryDetailSize"
+                                android:id="@+id/housingSF"
+                                android:hint="hello"
+                                android:textColor="#000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+                            <TextView
+                                android:textSize="@dimen/propertySummaryDetailSize"
+                                android:id="@+id/bedRoomS"
+                                android:hint="bed"
+                                android:textColor="#000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+                            <TextView
+                                android:textSize="@dimen/propertySummaryDetailSize"
+                                android:id="@+id/bathroomS"
+                                android:hint="bathroom"
+                                android:textColor="#000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+
+
+                </TableRow>
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:drawableLeft="@drawable/ic_property_assets"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginBottom="10dp"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:textColor="#000"
+                        android:text="Property Analysis Details"
+                        android:textSize="@dimen/overviewTitleSize" />
+                </TableRow>
+
+                <!-- Worksheet -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+
+                <TableRow
+                    android:id="@+id/propertyWorksheet"
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true">
+
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/propertyOverviewEntryPadding">
+
+                        <TextView
+                            android:textSize="@dimen/overviewValueSize"
+                            android:text="@string/worksheet"
+                            android:layout_width="wrap_content"
+                            android:textColor="#000"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0"
+                            android:src="@drawable/ic_right_arrow"/>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+                </TableRow>
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:drawableLeft="@drawable/ic_residential"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginBottom="10dp"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop"
+                        android:textColor="#000"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:text="Other Details"
+                        android:textSize="@dimen/overviewTitleSize" />
+                </TableRow>
+
+                <!-- Pictures -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+
+                <TableRow
+                    android:id="@+id/propertyPictures"
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true">
+
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/propertyOverviewEntryPadding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:text="Capture/upload images"
+                            android:textSize="@dimen/overviewValueSize" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+                </TableRow>
+
+                <!-- Notes -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+
+                <TableRow
+                    android:id="@+id/propertyNotes"
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true">
+
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/propertyOverviewEntryPadding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:text="Notes"
+                            android:textSize="@dimen/overviewValueSize" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+                </TableRow>
+
+
+
+                <!-- Location  -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:drawableLeft="@drawable/ic_location_position"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginBottom="10dp"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:textColor="#000"
+                        android:text="Geo-Location"
+                        android:textSize="@dimen/overviewTitleSize" />
+                </TableRow>
+
+                <!-- Google Map information -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+
+                <TableRow
+                    android:id="@+id/GoogleMaps"
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true">
+
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/propertyOverviewEntryPadding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:text="Property Location"
+                            android:textSize="@dimen/overviewValueSize" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0"
+                            android:src="@drawable/ic_right_arrow"/>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+                </TableRow>
+                <!-- Analysis title -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:drawableLeft="@drawable/ic_analysis_research"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginBottom="10dp"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:textColor="#000"
+                        android:text="Financial"
+                        android:textSize="@dimen/overviewTitleSize" />
+                </TableRow>
+
+                <!-- Projections -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+
+                <TableRow
+                    android:id="@+id/propertyProjections"
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true">
+
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/propertyOverviewEntryPadding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:text="Financial Investment Analysis"
+                            android:textSize="@dimen/overviewValueSize" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="0"
+                            android:src="@drawable/ic_right_arrow"/>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+                </TableRow>
+
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

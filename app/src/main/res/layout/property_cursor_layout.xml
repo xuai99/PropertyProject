@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:paddingRight="@dimen/titlePaddingHorizontal"
+        android:paddingEnd="@dimen/titlePaddingHorizontal">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/nickname"
+                android:textColor="#000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="myNickname"
+                android:textSize="@dimen/propertySummaryTitleSize" />
+            <TextView
+                android:textSize="@dimen/propertySummaryDetailSize"
+                android:textColor="#000"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="-----Housing Information-----"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:id="@+id/StreetName"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rental"
+                android:textSize="@dimen/propertySummaryTitleSize" />
+            <TextView
+                android:textSize="@dimen/propertySummaryDetailSize"
+                android:id="@+id/shortAddress"
+                android:textColor="#000"
+                android:text="myAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:textSize="@dimen/propertySummaryDetailSize"
+                android:id="@+id/mybuildYear"
+                android:textColor="#000"
+                android:text="Build Year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:textSize="@dimen/propertySummaryDetailSize"
+                android:id="@+id/mypropertyInfo"
+                android:textColor="#000"
+                android:text="my info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:textSize="@dimen/propertySummaryDetailSize"
+                android:id="@+id/myParkingInfo"
+                android:textColor="#000"
+                android:text="my info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:textSize="@dimen/propertySummaryDetailSize"
+                android:textColor="#000"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="-----Financial Information-----"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+            <TextView
+                android:textSize="@dimen/propertySummaryDetailSize"
+                android:gravity="start"
+                android:hint="Rental Value not set"
+                android:id="@+id/muhRental"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="@dimen/propertySummaryDetailSize"
+                android:gravity="end"
+                android:text="100"
+                android:id="@+id/price"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="@dimen/propertySummaryDetailSize"
+                android:gravity="end"
+                android:text="100"
+                android:id="@+id/housingFT"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="@dimen/propertySummaryDetailSize"
+                android:gravity="end"
+                android:text="100"
+                android:id="@+id/housingFTPrice"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:paddingLeft="@dimen/titlePaddingHorizontal"
+        android:paddingStart="@dimen/titlePaddingHorizontal"
+        android:paddingRight="@dimen/titlePaddingHorizontal"
+        android:paddingEnd="@dimen/titlePaddingHorizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_residential"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

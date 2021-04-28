@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:background="@color/inputContrastBackground"
+                                                 android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/inputContrastBackground"
+            app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:stretchColumns="1"
+                         android:background="@color/inputContrastBackground">
+
+                <!-- Details title -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:drawableLeft="@drawable/ic_details"
+                        android:drawablePadding="10dp"
+                        android:layout_column="1"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop"
+                        android:text="Housing Details"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+                <!-- Type -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_column="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="@string/propertyTypeField"
+                            android:labelFor="@+id/type"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <Spinner
+                            android:id="@+id/type"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize"
+                            android:drawSelectorOnTop="true" />
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+                </TableRow>
+
+                <!-- Beds/Bath -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_column="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="@string/bedsField"
+                                android:labelFor="@+id/beds"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:padding="@dimen/inputPadding"
+                                android:textSize="@dimen/inputSize"/>
+
+                            <Spinner
+                                android:id="@+id/beds"
+                                android:gravity="end"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:padding="@dimen/inputPadding"
+                                android:textSize="@dimen/inputSize"
+                                android:drawSelectorOnTop="true" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <View
+                    android:layout_height="match_parent"
+                    android:layout_width="@dimen/inputBorderThickness"
+                    android:background="@color/inputBorder" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/bathsField"
+                        android:labelFor="@+id/baths"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:padding="@dimen/inputPadding"
+                        android:textSize="@dimen/inputSize"/>
+
+                    <Spinner
+                        android:id="@+id/baths"
+                        android:gravity="end"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/inputPadding"
+                        android:textSize="@dimen/inputSize"
+                        android:drawSelectorOnTop="true" />
+
+                </LinearLayout>
+                <!-- Parking -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_column="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="@string/parkingField"
+                            android:labelFor="@+id/parking"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <Spinner
+                            android:id="@+id/parking"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize"
+                            android:drawSelectorOnTop="true" />
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+                </TableRow>
+
+                <!-- Details title -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:drawableLeft="@drawable/ic_residential"
+                        android:drawablePadding="10dp"
+                        android:layout_column="1"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop"
+                        android:text="Property Lot Details"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+                <!-- Square Footage -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="@string/squareFootageField"
+                            android:labelFor="@+id/sqft"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/sqft"
+                            android:inputType="number"
+                            android:hint="@string/squareFeet"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:maxLength="13"
+                            android:minWidth="160sp"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize" />
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <!-- Lot Size -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="@string/lotSizeField"
+                            android:labelFor="@+id/lot"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/lot"
+                            android:inputType="number"
+                            android:hint="@string/lotSize"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:maxLength="13"
+                            android:minWidth="160sp"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize" />
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <!-- Year Built -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="@string/yearBuiltField"
+                            android:labelFor="@+id/year"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/year"
+                            android:inputType="number"
+                            android:hint="@string/yearBuilt"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:maxLength="13"
+                            android:minWidth="160sp"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize" />
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+
+                <!-- Zoning -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="@string/zoningField"
+                            android:labelFor="@+id/zoning"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <EditText
+                            android:id="@+id/zoning"
+                            android:inputType="textCapWords"
+                            android:hint="@string/zoning"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize" />
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:background="@color/inputContrastBackground">
+
+                <!-- Housing title -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/ic_property"
+                        android:layout_column="1"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop"
+                        android:text="Property Nickname"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+            </TableLayout>
+                </LinearLayout>
+                <!-- Nickname -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+
+                    <EditText
+                        android:id="@+id/nickname"
+                        android:inputType="textCapWords"
+                        android:hint="@string/nickname"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/inputPadding"
+                        android:textSize="@dimen/inputSize" />
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+                </TableRow>
+
+                <!-- Address title -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/ic_address_map"
+                        android:layout_column="1"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop"
+                        android:text="Property Address"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+
+                <!-- Street -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputDividerBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <EditText
+                        android:id="@+id/street"
+                        android:inputType="textCapWords"
+                        android:hint="Street"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/inputPadding"
+                        android:textSize="@dimen/inputSize" />
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <!-- City -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBackground" />
+
+                    <EditText
+                        android:id="@+id/city"
+                        android:inputType="textCapWords"
+                        android:hint="@string/city"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/inputPadding"
+                        android:textSize="@dimen/inputSize" />
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputBorder" />
+                </TableRow>
+
+                <!-- State/Zip -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_column="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/state"
+                            android:inputType="textCapWords"
+                            android:layout_weight="1"
+                            android:hint="@string/stateOrRegion"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize" />
+
+                        <View
+                            android:gravity="end"
+                            android:layout_height="match_parent"
+                            android:layout_width="@dimen/inputBorderThickness"
+                            android:background="@color/inputContrastBackground" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <EditText
+                        android:id="@+id/zip"
+                        android:inputType="textCapWords"
+                        android:layout_weight="1"
+                        android:hint="@string/zip"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/inputPadding"
+                        android:textSize="@dimen/inputSize" />
+
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <View
+                    android:id="@+id/endingDivider"
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:background="@color/inputDividerBorder"
+                    android:layout_width="match_parent"/>
+
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dip"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,1710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inputContrastBackground"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/inputContrastBackground"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="1"
+                android:background="@color/inputContrastBackground">
+
+                <!-- Financing title -->
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="1"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/ic_mortgage"
+                        android:text="@string/financingTitle"
+                        android:textSize="@dimen/inputTitleSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+                <!-- Financing -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+                        <TextView
+                            android:text="@string/useALoanField"
+                            android:labelFor="@+id/financing"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <ToggleButton
+                            android:id="@+id/financing"
+                            android:background="@drawable/style_toggle_mybutton"
+                            android:layout_weight="0"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"/>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <!-- Down Payment -->
+                <View
+                    android:id="@+id/downPaymentBorder"
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:id="@+id/downPaymentRow"
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <TextView
+                            android:text="@string/downPaymentField"
+                            android:labelFor="@+id/downPayment"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/downPayment"
+                            android:inputType="number"
+                            android:gravity="end"
+                            android:maxLength="3"
+                            android:layout_weight="0"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:minWidth="100sp"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="@string/percentSymbol"
+                            android:textSize="@dimen/inputSize"/>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <!-- Interest rate -->
+                <View
+                    android:id="@+id/interestBorder"
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:id="@+id/interestRow"
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <TextView
+                            android:text="@string/interestRateField"
+                            android:labelFor="@+id/interestRate"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/interestRate"
+                            android:inputType="numberDecimal"
+                            android:gravity="end"
+                            android:layout_weight="0"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:maxLength="6"
+                            android:minWidth="100sp"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="@string/percentSymbol"
+                            android:textSize="@dimen/inputSize"/>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <!-- Loan Duration -->
+                <View
+                    android:id="@+id/loanBorder"
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:id="@+id/loanRow"
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+                            <TextView
+                                android:text="@string/loanDurationField"
+                                android:labelFor="@+id/loanDuration"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:textSize="@dimen/inputSize"/>
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0">
+                            <EditText
+                                android:id="@+id/loanDuration"
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:minWidth="80sp"
+                                android:maxLength="2"
+                                android:layout_alignParentTop="true"
+                                android:textSize="@dimen/inputSize"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/loanDuration"
+                                android:layout_alignEnd="@id/loanDuration"
+                                android:layout_below="@id/loanDuration"
+                                android:text="@string/yearsUnit"
+                                android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+                <!-- After repairs value info -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="1"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingHorizontal"
+                        android:text="@string/afterRepairsValueHelp"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+                <!-- purchase cost information -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="1"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingHorizontal"
+                        android:text="Property Cost"
+                        android:drawableLeft="@drawable/ic_property_assets"
+                        android:drawablePadding="10dp"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+
+                <!-- Purchase Price -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+                            <TextView
+                                android:text="@string/purchasePriceField"
+                                android:labelFor="@+id/price"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:textSize="@dimen/inputSize"/>
+                            <ImageView
+                                android:id="@+id/purchasePriceHelp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:src="@drawable/ic_question_mark"
+                                />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <protect.myRentalInfo.view.CurrencyTextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <EditText
+                            android:id="@+id/price"
+                            android:inputType="number"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:maxLength="13"
+                            android:minWidth="130sp"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize" />
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <!-- After Repairs Value -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+                            <TextView
+                                android:text="@string/afterRepairsValueField"
+                                android:labelFor="@+id/afterRepairsValue"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:textSize="@dimen/inputSize"/>
+                            <ImageView
+                                android:id="@+id/afterRepairsHelp"
+                                android:layout_weight="0"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/ic_question_mark"
+                                />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <protect.myRentalInfo.view.CurrencyTextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <EditText
+                            android:id="@+id/afterRepairsValue"
+                            android:inputType="number"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:maxLength="13"
+                            android:minWidth="130sp"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize" />
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+
+                <!-- Purchase Costs title -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_column="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop">
+                        <TextView
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@drawable/ic_property_assets"
+                            android:text="@string/purchaseCostsTitle"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:id="@+id/purchaseCostsHelp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_question_mark"
+                            />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- Total purchase costs -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+
+                <!-- Purchase costs itemize -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:id="@+id/purchaseCostsItemize"
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+                            <TextView
+                                android:text="Itemized Purchase cost:"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textSize="@dimen/inputSize"/>
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:layout_gravity="center">
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="0"
+                            android:padding="@dimen/inputPadding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:labelFor="@+id/purchaseCost"
+                                android:text="Total Cost: "
+                                android:textSize="@dimen/inputSize" />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <RelativeLayout
+                            android:id="@+id/purchaseCostPercentageLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0">
+                            <EditText
+                                android:id="@+id/purchaseCost"
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:minWidth="100sp"
+                                android:maxLength="3"
+                                android:layout_alignParentTop="true"
+                                android:textSize="@dimen/inputSize"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/purchaseCost"
+                                android:layout_alignEnd="@id/purchaseCost"
+                                android:layout_below="@id/purchaseCost"
+                                android:text="@string/percentOfPriceUnit"
+                                android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+
+                        <protect.myRentalInfo.view.CurrencyTextView
+                            android:id="@+id/purchaseCostItemizeCurrency"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <TextView
+                            android:id="@+id/purchaseCostItemize"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize"/>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <!-- Repair costs title -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_column="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop">
+                        <TextView
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@drawable/ic_remodel_house"
+                            android:text="@string/repairRemodelCostsTitle"
+                            android:textSize="@dimen/inputTitleSize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:id="@+id/repairRemodelCostsHelp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_question_mark"
+                            />
+                    </LinearLayout>
+                </TableRow>
+
+
+                <!-- Repair costs itemize -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:id="@+id/repairCostsItemize"
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Itemized Remodel Cost :"
+                                android:textSize="@dimen/inputSize" />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:layout_gravity="center">
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+                <!-- Repair/Remodel total -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:labelFor="@+id/repairCost"
+                            android:padding="@dimen/inputPadding"
+                            android:text="Total Cost: "
+                            android:textSize="@dimen/inputSize" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <protect.myRentalInfo.view.CurrencyTextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <EditText
+                            android:id="@+id/repairCost"
+                            android:inputType="number"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:maxLength="13"
+                            android:minWidth="130sp"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize" />
+
+                        <TextView
+                            android:id="@+id/repairCostItemize"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize" />
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+                <!-- Income title -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:drawableLeft="@drawable/ic_salary"
+                        android:layout_column="1"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop"
+                        android:text="@string/incomeTitle"
+                        android:textSize="@dimen/inputTitleSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+                <!-- Rent -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+                            <TextView
+                                android:text="@string/grossRentField"
+                                android:labelFor="@+id/rent"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:textSize="@dimen/inputSize"/>
+                            <ImageView
+                                android:id="@+id/grossRentHelp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:src="@drawable/ic_question_mark"
+                                />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <protect.myRentalInfo.view.CurrencyTextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0">
+                            <EditText
+                                android:id="@+id/rent"
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:maxLength="7"
+                                android:minWidth="130sp"
+                                android:layout_alignParentTop="true"
+                                android:textSize="@dimen/inputSize"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/rent"
+                                android:layout_alignEnd="@id/rent"
+                                android:layout_below="@id/rent"
+                                android:text="@string/perMonthUnit"
+                                android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+
+                <!-- Other Income -->
+
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="41dp"
+                                android:layout_weight="0"
+                                android:labelFor="@+id/otherIncome"
+                                android:text="@string/otherIncomeField"
+                                android:textSize="@dimen/inputSize" />
+                            <ImageView
+                                android:id="@+id/otherIncomeHelp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:src="@drawable/ic_question_mark"
+                                />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <protect.myRentalInfo.view.CurrencyTextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0">
+                            <EditText
+                                android:id="@+id/otherIncome"
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:maxLength="7"
+                                android:minWidth="130sp"
+                                android:layout_alignParentTop="true"
+                                android:textSize="@dimen/inputSize"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/otherIncome"
+                                android:layout_alignEnd="@id/otherIncome"
+                                android:layout_below="@id/otherIncome"
+                                android:text="@string/perMonthUnit"
+                                android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+
+                <!-- Expenses title -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_column="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop">
+                        <TextView
+                            android:drawableLeft="@drawable/ic_expense"
+                            android:drawablePadding="10dp"
+                            android:text="@string/expensesTitle"
+                            android:textSize="@dimen/inputTitleSize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:id="@+id/expensesHelp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_question_mark"
+                            />
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- Expenses itemize -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:id="@+id/expensesItemize"
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Itemized Expenses :"
+                                android:textSize="@dimen/inputSize" />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:layout_gravity="center">
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+                <!-- Total Expenses -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+                            <TextView
+                                android:text="Net Expenses"
+                                android:labelFor="@+id/totalExpenses"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:textSize="@dimen/inputSize"/>
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <RelativeLayout
+                            android:id="@+id/totalExpensesPercentLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0">
+                            <EditText
+                                android:id="@+id/totalExpenses"
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:maxLength="6"
+                                android:minWidth="100sp"
+                                android:layout_alignParentTop="true"
+                                android:textSize="@dimen/inputSize"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/totalExpenses"
+                                android:layout_alignEnd="@id/totalExpenses"
+                                android:layout_below="@id/totalExpenses"
+                                android:text="@string/percentOfRentUnit"
+                                android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+
+                        <protect.myRentalInfo.view.CurrencyTextView
+                            android:id="@+id/totalExpensesItemizeCurrency"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:textSize="@dimen/inputSize"/>
+
+                        <RelativeLayout
+                            android:id="@+id/totalExpensesItemizeLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0">
+                            <TextView
+                                android:id="@+id/totalExpensesItemize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:minWidth="100sp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:layout_alignParentTop="true"
+                                android:textSize="@dimen/inputSize"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/totalExpensesItemize"
+                                android:layout_alignEnd="@id/totalExpensesItemize"
+                                android:layout_below="@id/totalExpensesItemize"
+                                android:text="@string/perMonthUnit"
+                                android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <!-- Assumptions title -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:drawableLeft="@drawable/ic_taxes"
+                        android:drawablePadding="10dp"
+                        android:layout_column="1"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingTop"
+                        android:text="@string/assumptionsTitle"
+                        android:textSize="@dimen/inputTitleSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+                <!-- Vacancy -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+                            <TextView
+                                android:text="@string/vacancyField"
+                                android:labelFor="@+id/totalExpenses"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:textSize="@dimen/inputSize"/>
+                            <ImageView
+                                android:id="@+id/vacancyHelp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:src="@drawable/ic_question_mark"
+                                />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/vacancy"
+                            android:inputType="number"
+                            android:gravity="end"
+                            android:layout_weight="0"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:maxLength="3"
+                            android:minWidth="100sp"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="@string/percentSymbol"
+                            android:textSize="@dimen/inputSize"/>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <!-- Appreciation -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+                            <TextView
+                                android:text="@string/appreciationField"
+                                android:labelFor="@+id/appreciation"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:textSize="@dimen/inputSize"/>
+                            <ImageView
+                                android:id="@+id/appreciationHelp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:src="@drawable/ic_question_mark"
+                                />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0">
+                            <EditText
+                                android:id="@+id/appreciation"
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:maxLength="3"
+                                android:minWidth="100sp"
+                                android:layout_alignParentTop="true"
+                                android:textSize="@dimen/inputSize"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/appreciation"
+                                android:layout_alignEnd="@id/appreciation"
+                                android:layout_below="@id/appreciation"
+                                android:text="@string/percentPerYearUnit"
+                                android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <!-- Income Increase -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+                            <TextView
+                                android:text="@string/incomeIncreaseField"
+                                android:labelFor="@+id/incomeIncrease"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:textSize="@dimen/inputSize"/>
+                            <ImageView
+                                android:id="@+id/incomeIncreaseHelp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:src="@drawable/ic_question_mark"
+                                />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0">
+                            <EditText
+                                android:id="@+id/incomeIncrease"
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:maxLength="3"
+                                android:minWidth="100sp"
+                                android:layout_alignParentTop="true"
+                                android:textSize="@dimen/inputSize"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/incomeIncrease"
+                                android:layout_alignEnd="@id/incomeIncrease"
+                                android:layout_below="@id/incomeIncrease"
+                                android:text="@string/percentPerYearUnit"
+                                android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <!-- Expenses increase -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+                            <TextView
+                                android:text="@string/expensesIncreaseField"
+                                android:labelFor="@+id/expensesIncrease"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:textSize="@dimen/inputSize"/>
+                            <ImageView
+                                android:id="@+id/expensesIncreaseHelp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:src="@drawable/ic_question_mark"
+                                />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0">
+                            <EditText
+                                android:id="@+id/expensesIncrease"
+                                android:inputType="number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:maxLength="3"
+                                android:minWidth="100sp"
+                                android:layout_alignParentTop="true"
+                                android:textSize="@dimen/inputSize"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@id/expensesIncrease"
+                                android:layout_alignEnd="@id/expensesIncrease"
+                                android:layout_below="@id/expensesIncrease"
+                                android:text="@string/percentPerYearUnit"
+                                android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+
+
+                <!-- Income Tax Rate -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputContrastBackground" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/inputPadding"
+                        android:paddingEnd="@dimen/inputPadding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/inputPadding">
+                            <TextView
+                                android:text="@string/incomeTaxRateField"
+                                android:labelFor="@+id/incomeTaxRateValue"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:textSize="@dimen/inputSize"/>
+                            <ImageView
+                                android:id="@+id/incomeTaxRateHelp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="0"
+                                android:src="@drawable/ic_question_mark"
+                                />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/incomeTaxRate"
+                            android:inputType="number"
+                            android:gravity="end"
+                            android:layout_weight="0"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:maxLength="3"
+                            android:minWidth="100sp"
+                            android:padding="@dimen/inputPadding"
+                            android:textSize="@dimen/inputSize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="@string/percentSymbol"
+                            android:textSize="@dimen/inputSize"/>
+                    </LinearLayout>
+
+                    <View
+                        android:gravity="end"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/inputBorderThickness"
+                        android:background="@color/inputContrastBackground" />
+                </TableRow>
+
+                <!-- Income Tax Rate info -->
+                <View
+                    android:layout_height="@dimen/inputBorderThickness"
+                    android:layout_width="match_parent"
+                    android:background="@color/inputBorder" />
+                <TableRow
+                    android:background="@color/inputContrastBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="1"
+                        android:paddingLeft="@dimen/titlePaddingHorizontal"
+                        android:paddingRight="@dimen/titlePaddingHorizontal"
+                        android:paddingStart="@dimen/titlePaddingHorizontal"
+                        android:paddingTop="@dimen/titlePaddingHorizontal"
+                        android:text="@string/incomeTaxRateValueHelp"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/inputBorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dip"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
