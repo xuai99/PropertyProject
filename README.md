@@ -9,5 +9,5 @@ Application Objective
   
 •	Provide chart analysis of gross rental yearly income of all properties and breakdown Amortization interest and principle information in chart.
 
-<img src="https://user-images.githubusercontent.com/43243626/116514531-bdd55880-a8fd-11eb-9842-ac49217024b5.png" alt="alt text" width="200" height="350"> <img src="https://user-images.githubusercontent.com/43243626/116514700-f5440500-a8fd-11eb-83f2-03d8a0e67794.png" alt="alt text" width="200" height="350"> <img src="https://user-images.githubusercontent.com/43243626/116514748-05f47b00-a8fe-11eb-9c4e-9bcbc53826be.png" alt="alt text" width="200" height="350"> 
+<img src="https://user-images.githubusercontent.com/43243626/116514531-bdd55880-a8fd-11eb-9842-ac49217024b5.png" alt="alt text" width="100" height="250"> <img src="https://user-images.githubusercontent.com/43243626/116514700-f5440500-a8fd-11eb-83f2-03d8a0e67794.png" alt="alt text" width="100" height="250"> <img src="https://user-images.githubusercontent.com/43243626/116514748-05f47b00-a8fe-11eb-9c4e-9bcbc53826be.png" alt="alt text" width="100" height="250"> 
 
