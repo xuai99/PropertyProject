@@ -12,3 +12,11 @@ Project Objective
 <img src="https://user-images.githubusercontent.com/43243626/116514531-bdd55880-a8fd-11eb-9842-ac49217024b5.png" alt="alt text" width="200" height="350"> <img src="https://user-images.githubusercontent.com/43243626/116514700-f5440500-a8fd-11eb-83f2-03d8a0e67794.png" alt="alt text" width="200" height="350"> <img src="https://user-images.githubusercontent.com/43243626/116514748-05f47b00-a8fe-11eb-9c4e-9bcbc53826be.png" alt="alt text" width="200" height="350"> 
 
 Image above shows the application add property function and home page, adding new property user have to type in the information and save it. Information key in is then shown on the homepage on the middle image. Rental yearly gross income is shown on Pie chart analysis to show the amount of rental income yield yearly minus vacancy assumption key in by user.  
+
+<img src="https://user-images.githubusercontent.com/43243626/116515506-f75a9380-a8fe-11eb-9613-9dac914fae6d.png" alt="alt text" width="200" height="350">
+
+Image above are the property information overview function, when user click in the property on homepage. 
+
+<img src="https://user-images.githubusercontent.com/43243626/116515809-59b39400-a8ff-11eb-9ce1-598be52c9e4d.png" alt="alt text" width="200" height="350"><img src="https://user-images.githubusercontent.com/43243626/116515809-59b39400-a8ff-11eb-9ce1-598be52c9e4d.png" alt="alt text" width="200" height="350">
+
+Image above is the geo location function, it gets property location and set into the google maps in the application, it will base on user input and locate the location on the embedded map. Besides, user able to get location latitude and longitude set into the map for further function as go to location, through Get Lat/long location button function.  
