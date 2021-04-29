@@ -20,3 +20,7 @@ Image above are the property information overview function, when user click in t
 <img src="https://user-images.githubusercontent.com/43243626/116515809-59b39400-a8ff-11eb-9ce1-598be52c9e4d.png" alt="alt text" width="200" height="350"><img src="https://user-images.githubusercontent.com/43243626/116516225-ef4f2380-a8ff-11eb-9d2d-92fbcf5defc9.png" alt="alt text" width="200" height="350">
 
 Image above is the geo location function, it gets property location and set into the google maps in the application, it will base on user input and locate the location on the embedded map. Besides, user able to get location latitude and longitude set into the map for further function as go to location, through Get Lat/long location button function.  
+
+<img src="https://user-images.githubusercontent.com/43243626/116556003-90a19e00-a92f-11eb-98bb-a6d9b60818ab.png" alt="alt text" width="200" height="350"> <img src="https://user-images.githubusercontent.com/43243626/116556073-a911b880-a92f-11eb-9085-fc0a66d95d0a.png" alt="alt text" width="200" height="350">
+
+Image above are the function that allows user to capture or import images into the list view and show. Left hand side images are function that allows user to add and save note information.
