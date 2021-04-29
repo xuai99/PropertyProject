@@ -14,19 +14,20 @@ Homepage and input data function
 
 Image above shows the application add property function and home page, adding new property user have to type in the information and save it. Information key in is then shown on the homepage on the middle image. Rental yearly gross income is shown on Pie chart analysis to show the amount of rental income yield yearly minus vacancy assumption key in by user.  
 
-overview
+
 <img src="https://user-images.githubusercontent.com/43243626/116515506-f75a9380-a8fe-11eb-9613-9dac914fae6d.png" alt="alt text" width="200" height="350">
 
+overview
 Image above are the property information overview function, when user click in the property on homepage. 
 
-Location function
 <img src="https://user-images.githubusercontent.com/43243626/116515809-59b39400-a8ff-11eb-9ce1-598be52c9e4d.png" alt="alt text" width="200" height="350"><img src="https://user-images.githubusercontent.com/43243626/116516225-ef4f2380-a8ff-11eb-9d2d-92fbcf5defc9.png" alt="alt text" width="200" height="350">
 
+Location function
 Image above is the geo location function, it gets property location and set into the google maps in the application, it will base on user input and locate the location on the embedded map. Besides, user able to get location latitude and longitude set into the map for further function as go to location, through Get Lat/long location button function.
 
-Picture and notepad function
 <img src="https://user-images.githubusercontent.com/43243626/116556003-90a19e00-a92f-11eb-98bb-a6d9b60818ab.png" alt="alt text" width="200" height="350"> <img src="https://user-images.githubusercontent.com/43243626/116556073-a911b880-a92f-11eb-9085-fc0a66d95d0a.png" alt="alt text" width="200" height="350">
 
+Picture and notepad function
 Image above are the function that allows user to capture or import images into the list view and show. Left hand side images are function that allows user to add and save note information.
 
 property financial details
