@@ -17,6 +17,6 @@ Image above shows the application add property function and home page, adding ne
 
 Image above are the property information overview function, when user click in the property on homepage. 
 
-<img src="https://user-images.githubusercontent.com/43243626/116515809-59b39400-a8ff-11eb-9ce1-598be52c9e4d.png" alt="alt text" width="200" height="350"><img src="https://user-images.githubusercontent.com/43243626/116515809-59b39400-a8ff-11eb-9ce1-598be52c9e4d.png" alt="alt text" width="200" height="350">
+<img src="https://user-images.githubusercontent.com/43243626/116515809-59b39400-a8ff-11eb-9ce1-598be52c9e4d.png" alt="alt text" width="200" height="350"><img src="https://user-images.githubusercontent.com/43243626/116516225-ef4f2380-a8ff-11eb-9d2d-92fbcf5defc9.png" alt="alt text" width="200" height="350">
 
 Image above is the geo location function, it gets property location and set into the google maps in the application, it will base on user input and locate the location on the embedded map. Besides, user able to get location latitude and longitude set into the map for further function as go to location, through Get Lat/long location button function.  
