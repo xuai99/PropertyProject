@@ -74,4 +74,4 @@ Mortgage information (Pie Chart)
 Breakdown Mortgage amortization information to user such as total amount pay based on user mortgage and property information.
 
 
-
+# feel free to download and refer.
