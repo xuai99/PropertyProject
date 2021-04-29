@@ -2,7 +2,7 @@
 
 Final year Project development, Coventry CU/INTI 
 
-Application Objective 
+Project Objective 
 
 •	Enables landowner to made and manage multiple property information and able to handle multiple housing analysis such as 
   Mortgage information,Financial information such as cashflow, operating income, capitalization returns and Amortization information. 
