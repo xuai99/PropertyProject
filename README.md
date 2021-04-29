@@ -34,4 +34,22 @@ Picture and notepad function
 
 Image above are the function that allows user to capture or import images into the list view and show. Left hand side images are function that allows user to add and save note information.
 
+
+<img src="https://user-images.githubusercontent.com/43243626/116559017-93ea5900-a932-11eb-8186-384c1878c3e7.png" alt="alt text" width="200" height="350"> <img src="https://user-images.githubusercontent.com/43243626/116559075-a19fde80-a932-11eb-85a2-5d525da17721.png" alt="alt text" width="200" height="350"> <img src="https://user-images.githubusercontent.com/43243626/116559184-bc725300-a932-11eb-9ede-e10afa75cbc4.png" alt="alt text" width="200" height="350"> 
+
 property financial details
+
+Function provide user with the ability to key in their financial details, such as mortgage information, property purchased cost, personal tax income, expenses, purchase cost, remodel cost, Net income information, such as gross rent and other income and lastly assumption information such as property yearly appreciation, vacancy rate and potential income and expenses increases.
+
+<img src="https://user-images.githubusercontent.com/43243626/116559486-196e0900-a933-11eb-98f8-da8101797a7a.png" alt="alt text" width="200" height="350">
+
+Itemize Function in property financial detail function
+
+itemized function similar remodel, purchase cost and expenses. Allowing user to add further itemized list information for an accurate calculation. 
+
+Purchase cost – fees and charges of the closing real estate and also consist of miscellaneous fee when purchasing a property such as bank processing fee loans, tax on legal agreement. and also other closing cost fee of the property
+
+Repair cost – sometimes home purchase requires repairs and remodeling, such as fix flooring, repainting and piping repairs on property.
+
+Expenses - to calculate monthly expenses such as water,electricity bill
+.
