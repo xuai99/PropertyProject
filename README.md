@@ -2,6 +2,8 @@
 
 Final year Project development, Coventry CU/INTI 
 
+Databased uses is SQLlite and Google Library to get property location.
+
 Project Objective 
 
 •	Enables landowner to made and manage multiple property information and able to handle multiple housing analysis such as 
